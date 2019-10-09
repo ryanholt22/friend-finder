@@ -2,7 +2,10 @@ var express = require("express");
 var app = express();
 var path = require("path");
 
-
+app.get("/", function(req,res) {
+    if (err) throw err;
+    res.sendFile("../public/home.html");
+})
 app.get("/api/friends", function(req, res) {
     if (err) throw (err);
 })
