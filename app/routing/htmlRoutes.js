@@ -9,7 +9,7 @@ app.get("/survery", function(req, res) {
 })
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "home.html"));
+    res.json(path.join(__dirname, "app/public/home.html"));
   });
 
 app.listen(PORT, function () {
